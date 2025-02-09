@@ -68,7 +68,10 @@ class SiteController extends Controller
             return redirect()->back()->with('error', $e->getMessage());
         }
     }
-
+    
+    /**
+     * Method logout
+     */
     public function logout()
     {
         Session::flush();

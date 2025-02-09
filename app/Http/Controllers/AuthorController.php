@@ -6,7 +6,6 @@ use App\Services\AuthorServices;
 use Exception;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 
 /**
  * Class AuthorController

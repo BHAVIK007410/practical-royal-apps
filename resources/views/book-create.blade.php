@@ -99,6 +99,9 @@
                                                 {{ $item['last_name'] }}</option>
                                         @endforeach
                                     </select>
+                                    @if ($errors->has('author'))
+                                        <p class="text-red-600 text-sm">{{ $errors->first('author') }}</p>
+                                    @endif
                                 </div>
 
                                 <!-- Date Picker -->
@@ -108,6 +111,9 @@
                                     </label>
                                     <input type="date" name="releasedate" id="date"
                                         class="block w-full p-3 rounded bg-gray-200 border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                                        @if ($errors->has('releasedate'))
+                                        <p class="text-red-600 text-sm">{{ $errors->first('releasedate') }}</p>
+                                    @endif
                                 </div>
 
                                 <!-- Buttons -->

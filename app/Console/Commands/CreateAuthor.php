@@ -44,7 +44,7 @@ class CreateAuthor extends Command
      */
     public function handle()
     {
-        $this->info('Creating a new user...');
+        $this->info('Creating a new author...');
 
         // Ask for user details
         $token = $this->app->getToken();
